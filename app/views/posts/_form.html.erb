@@ -1,3 +1,6 @@
+<%= render 'components/header' %>
+
+
 <%= form_for(post) do |f| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -14,6 +17,8 @@
   <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title %>
+    <%= f.label :summary %>
+    <%= f.text_field :summary %>
   </div>
 
   <div class="actions">

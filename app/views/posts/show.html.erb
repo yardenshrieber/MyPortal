@@ -1,8 +1,13 @@
+<%= render 'components/header' %>
+
+
 <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Title:</strong>
   <%= @post.title %>
+  <strong>Summary:</strong>
+  <%= @post.summary %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |

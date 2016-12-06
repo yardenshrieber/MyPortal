@@ -21,6 +21,8 @@ class PagesController < ApplicationController
   def edit
   end
 
+
+
   # POST /pages
   # POST /pages.json
   def create
@@ -61,6 +63,15 @@ class PagesController < ApplicationController
     end
   end
 
+  def homepage
+
+  end
+
+  def about
+
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_page
@@ -71,4 +82,7 @@ class PagesController < ApplicationController
     def page_params
       params.require(:page).permit(:title)
     end
+
+
+
 end
